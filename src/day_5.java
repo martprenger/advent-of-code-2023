@@ -43,7 +43,6 @@ public class day_5 {
             maps.add(map);
         }
 
-
         String[] inputs = input.get(0).get(0).split(": ")[1].split(" ");
 
         ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
