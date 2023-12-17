@@ -24,12 +24,11 @@ public class day_14 {
                 //this doesn't work but don't know why
                 if (compareMaps(map1, map)) {
                     System.out.println("Found a match at cycle " + cycle);
-
-                    int c = cycle - count;
+                    int c = cycle - count -1;
                     System.out.println("Cycle difference: " + c);
-                    int index = (1000000000 - count) % c + count;
+                    int index = (1000000000 - 1 - count) % c + count;
                     System.out.println("Index: " + index);
-                    char[][] testMap = maps.get(index-3);
+                    char[][] testMap = maps.get(index-1);
                     System.out.println("final cycle: " + index + " Map load: " + getMapLoad(testMap));
                     System.exit(0);
                 }
