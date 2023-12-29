@@ -101,14 +101,15 @@ public class day_22 {
         }
         System.out.println("part 1:  " + count);
 
+        //it is ineficient but works
         int part2 = 0;
 
         for (int i = 0; i < bricks.length; i++) {
-            System.out.println("i: " + i);
             part2 += count(i, bricks);
         }
         System.out.println("part 2:  " + part2);
     }
+
 
     public static int count(int idx, Brick[] bricks) {
         int n = bricks.length;
@@ -146,6 +147,8 @@ public class day_22 {
 
         return count;
     }
+
+
     public static void makeBricksFall(Brick[] bricks) {
 
         for (int i = 0; i < bricks.length; i++) {
